@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46413814-db4b-4c05-be3c-7d6dd792155e" name="Default" comment="" />
+    <list default="true" id="46413814-db4b-4c05-be3c-7d6dd792155e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trello_automation.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="trello_automation.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="trello_automation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trello_automation.py">
+      <file leaf-file-name="UserDict.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda/lib/python2.7/UserDict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="555">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trello_automation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda/lib/python2.7/trello_automation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -33,12 +46,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda/lib/python2.7/UserDict.py">
+      <file leaf-file-name="trello_automation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trello_automation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="330">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,10 +67,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/trello_automation.py" />
+        <option value="$USER_HOME$/anaconda/lib/python2.7/trello_automation.py" />
       </list>
     </option>
   </component>
@@ -65,7 +84,7 @@
     <option name="width" value="1276" />
     <option name="height" value="777" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -100,16 +119,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trello_automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trello_automation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -117,6 +126,12 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -334,10 +349,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/trello_automation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trello_automation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
