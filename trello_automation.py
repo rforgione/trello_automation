@@ -41,8 +41,5 @@ refresh_recurring(gtd_board, "Daily Recurring", "Today")
 
 if datetime.datetime.today().weekday() == 6:
     clear_out_old_recurring(gtd_board, "This Week")
-    refresh_recurring(gtd_board, "Weekly Recurring", "This Week")
+    refresh_recurring(gtd_board, "Weekly Recurring", "This Week",168)
 
-if datetime.datetime.today().day == 1:
-    clear_out_old_recurring(gtd_board, "This Month")
-    refresh_recurring(gtd_board, "Monthly Recurring", "This Month")
