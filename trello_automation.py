@@ -1,4 +1,5 @@
 from trello import TrelloClient, Board, List
+from sys import argv
 import os
 import datetime
 
@@ -35,11 +36,27 @@ def clear_out_old_recurring(board, listname):
         if "#recurring" in [j.name for j in i.list_labels]:
             i.set_closed(True)
 
+def execute_update(board, recurring_list, actual_list, date_update):
+    clear_out_old_recurring(board, actual_list)
+    refresh_recurring(board, recurring_list, actual_list, time_delta_hours=date_update)
 
-clear_out_old_recurring(gtd_board, "Today")
-refresh_recurring(gtd_board, "Daily Recurring", "Today")
+def update(update_type):
+    if update_type == "daily":
+        execute_update(gtd_board, "Daily Recurring", "Today", 24)
+    elif update_type == "weekly":
+        execute_update(gtd_board, "Weekly Recurring", "This Week", 168)
+    elif update_type == "full":
+        execute_update(gtd_board, "Daily Recurring", "Today", 24)
 
-if datetime.datetime.today().weekday() == 6:
-    clear_out_old_recurring(gtd_board, "This Week")
-    refresh_recurring(gtd_board, "Weekly Recurring", "This Week",168)
+        if datetime.datetime.today().weekday() == 6:
+            execute_update(gtd_board, "Weekly Recurring", "This Week", 168)
+
+if __name__ == "__main__":
+
+    if not argv[1]:
+        update_type = "full"
+    else:
+        update_type = argv[1]
+
+    update(update_type)
 
