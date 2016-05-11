@@ -21,7 +21,8 @@ def copy_all_cards(board, first_list_name, second_list_name):
         get_list_with_name(board, second_list_name).\
             add_card(name=i.name,
                      due=i.due_date.strftime('%Y-%m-%d'),
-                     labels=i.list_labels)
+                     labels=i.list_labels,
+                     source=i.id)
 
 def update_all_due(board, listname, time_delta_hours=24):
     for i in get_list_with_name(board, listname).list_cards():
