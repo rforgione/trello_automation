@@ -2,6 +2,7 @@ from trello import TrelloClient, Board, List
 from sys import argv
 import os
 import datetime
+import pytz
 
 client = TrelloClient(os.environ["TRELLO_API_KEY"],
                       os.environ["TRELLO_API_SECRET"],
@@ -20,7 +21,7 @@ def copy_all_cards(board, first_list_name, second_list_name):
     for i in get_list_with_name(board, first_list_name).list_cards():
         get_list_with_name(board, second_list_name).\
             add_card(name=i.name,
-                     due=i.due_date.strftime('%Y-%m-%d'),
+                     due=i.due_date.astimezone(pytz.timezone('US/Eastern')).strftime('%Y-%m-%d %H:%M:%S'),
                      labels=i.list_labels,
                      source=i.id)
 
