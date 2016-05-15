@@ -55,7 +55,7 @@ def update(update_type):
 
 if __name__ == "__main__":
 
-    if not argv[1]:
+    if len(argv) == 1:
         update_type = "full"
     else:
         update_type = argv[1]
